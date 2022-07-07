@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+@font-face {
+  font-family: peachesAndCream;
+  src: url("Peaches-and-Cream-Regular.otf") format("opentype");
+}
+
 body {
   margin: 0;
 }
@@ -45,6 +50,64 @@ li {
 .nav__item:hover {
   background-color: #00ABC7;
   text-decoration: underline;
+}
+
+.nav__submenu {
+  display: none;
+  height: 0;
+  flex-direction: row;
+  background-color: #00ABC7;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  padding: 20px 0 20px 90px;
+  transform-origin: top left;
+  animation: growDown 200ms ease-in;
+}
+
+.nav__submenu-item {
+  margin-bottom: 4px;
+}
+
+.nav__submenu-item:hover {
+  background-color: #F8F8F8;
+  
+}
+
+.nav__submenu-item a:hover {
+  color: #0032A0;
+}
+
+.nav__intro-box {
+  width: 200px;
+  font-size: 16px;
+  background-color: #0032A0;
+  border-radius: 4px;
+  height: fit-content;
+  padding: 8px;
+}
+
+.nav__intro-box div {
+  font-family: PeachesAndCream;
+  font-size: 2.2em;
+  padding-bottom: 8px;
+}
+
+.nav__intro-box p {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.active {
+  background-color: #00ABC7;
+  text-decoration: underline;
+}
+
+.active .nav__submenu {
+  display: flex;
+  height: fit-content;
 }
 
 .content {
