@@ -5,7 +5,7 @@ Task 1 Nav Menu Component (Desktop):
  - There is no outline / highlighting showing which item is currently in focus when navigating using the tab key.
  - It's not obvious to users that some of the menu items have submenus.
  - The submenu div expands to the same size regardless of submenu content so it takes up a lot more space that it needs to.
- - Some submenu items are not title case
+ - Some submenu items are not title case.
 
  2) I will improve it by:
   - Using the semantic nav html element to provide keyboard navigation using the tab key and to provide an outline showing what element is currently focused.
@@ -13,4 +13,4 @@ Task 1 Nav Menu Component (Desktop):
   - Moving the link present on the Existing Customers and Info Centre menu items into the submenu to improve keyboard navigation.
   - Adding a small arrow icon next to menu items that expand into a submenu.
   - Changing the submenus to only take up the space needed for their content when expanded.
-  - add a small animation when the menu is expanded 
+  - Add a small animation when a submenu is expanded.

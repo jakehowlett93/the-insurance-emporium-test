@@ -27,6 +27,15 @@ li {
   height: 20px;
 }
 
+.icon__arrow {
+  height: 15px;
+  transform: rotate(180deg);
+}
+
+.active>a>.icon__arrow {
+  transform: rotate(0deg);
+}
+
 .nav {
   color: #F8F8F8;
   font-family: "Raleway","Helvetica";
@@ -52,6 +61,15 @@ li {
   text-decoration: underline;
 }
 
+@keyframes growDown {
+  0% {
+      transform: scaleY(0)
+  }
+  100% {
+    transform: scaleY(1)
+  }
+}
+
 .nav__submenu {
   display: none;
   height: 0;
@@ -63,7 +81,7 @@ li {
   top: 44px;
   padding: 20px 0 20px 90px;
   transform-origin: top left;
-  animation: growDown 200ms ease-in;
+  animation: growDown 100ms ease-in;
 }
 
 .nav__submenu-item {
